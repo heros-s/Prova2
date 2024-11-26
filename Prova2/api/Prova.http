@@ -1,0 +1,32 @@
+### Cadastrar categoria
+POST http://localhost:5017/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Nova Categoria"
+}
+
+### Listar categorias
+GET http://localhost:5017/api/categoria/listar
+
+### Cadastrar tarefa
+POST http://localhost:5017/api/tarefa/cadastrar
+Content-Type: application/json
+
+{
+    "titulo": "Nova Tarefa",
+    "descricao": "Descrição da tarefa",
+    "categoriaId": 1
+}
+
+### Listar tarefas
+GET http://localhost:5017/api/tarefa/listar
+
+### Alterar status da tarefa
+PATCH http://localhost:5017/api/tarefa/alterar/1
+
+### Listar tarefas não concluídas
+GET http://localhost:5017/api/tarefa/naoconcluidas
+
+### Listar tarefas concluídas
+GET http://localhost:5017/api/tarefa/concluidas
